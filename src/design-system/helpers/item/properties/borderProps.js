@@ -1,0 +1,25 @@
+const BORDER_PROPS = {
+  thin: ['borderWidth'],
+  thinTop: ['borderTopWidth'],
+  thinRight: ['borderRightWidth'],
+  thinBottom: ['borderBottomWidth'],
+  thinLeft: ['borderLeftWidth'],
+  thinVertical: ['borderTopWidth', 'borderBottomWidth'],
+  thinHorizontal: ['borderLeftWidth', 'borderRightWidth'],
+  semibold: ['borderWidth'],
+  semiboldTop: ['borderTopWidth'],
+  semiboldRight: ['borderRightWidth'],
+  semiboldBottom: ['borderBottomWidth'],
+  semiboldLeft: ['borderLeftWidth'],
+  semiboldVertical: ['borderTopWidth', 'borderBottomWidth'],
+  semiboldHorizontal: ['borderLeftWidth', 'borderRightWidth'],
+  bold: ['borderWidth'],
+  boldTop: ['borderTopWidth'],
+  boldRight: ['borderRightWidth'],
+  boldBottom: ['borderBottomWidth'],
+  boldLeft: ['borderLeftWidth'],
+  boldVertical: ['borderTopWidth', 'borderBottomWidth'],
+  boldHorizontal: ['borderLeftWidth', 'borderRightWidth'],
+};
+
+export default BORDER_PROPS;
