@@ -82,7 +82,6 @@ export default {
   Link,
   Menu,
   MenuItem,
-  PopConfirm,
   Radio,
   Rating,
   SectionList,
