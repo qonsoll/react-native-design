@@ -25,7 +25,6 @@ import Switch from './components/Switch';
 import Text from './components/Text';
 import Toggle from './components/Toggle';
 import Upload from './components/Upload';
-import AutoScroll from './components/AutoScroll';
 import useTheme from './design-system/context/useTheme';
 import ThemeProvider from './design-system/context/Theme.provider';
 
@@ -57,7 +56,6 @@ export {
   Text,
   Toggle,
   Upload,
-  AutoScroll,
   useTheme,
   ThemeProvider,
 };
@@ -97,7 +95,6 @@ export default {
   Text,
   Toggle,
   Upload,
-  AutoScroll,
   useTheme,
   ThemeProvider,
 };

@@ -25,7 +25,6 @@ import Switch from './Switch';
 import Text from './Text';
 import Toggle from './Toggle';
 import Upload from './Upload';
-import AutoScroll from './AutoScroll';
 
 export {
   Alert,
@@ -55,7 +54,6 @@ export {
   Text,
   Toggle,
   Upload,
-  AutoScroll,
 };
 
 export default {
@@ -93,5 +91,4 @@ export default {
   Text,
   Toggle,
   Upload,
-  AutoScroll,
 };
