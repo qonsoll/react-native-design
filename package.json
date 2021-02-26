@@ -1,6 +1,6 @@
 {
   "name": "@qonsoll/react-native-design",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Powerful components library for react-native apps",
   "main": "src/index.js",
   "scripts": {
