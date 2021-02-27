@@ -1,6 +1,6 @@
 {
   "name": "@qonsoll/react-native-design",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Powerful components library for react-native apps",
   "main": "src/index.js",
   "scripts": {
@@ -37,7 +37,6 @@
     "react-native-menu": "^0.23.0",
     "react-native-svg": "^12.1.0",
     "react-native-svg-transformer": "^0.14.3",
-    "react-native-vector-icons": "^8.0.0",
-    "react-native-simple-radio-button": "^2.7.4"
+    "react-native-vector-icons": "^8.0.0"
   }
 }
