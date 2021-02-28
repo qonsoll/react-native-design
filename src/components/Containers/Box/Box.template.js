@@ -136,7 +136,6 @@ const Box = (props) => {
 
 // PropTypes
 Box.propTypes = {
-  children: PropTypes.element,
   bg: PropTypes.string,
   mx: PropTypes.number,
   my: PropTypes.number,
