@@ -23,7 +23,7 @@ const Link = (props) => {
 
 Link.propTypes = {
   onPress: PropTypes.func,
-  children: PropTypes.element,
+  children: PropTypes.string,
   color: PropTypes.string
 }
 
