@@ -24,9 +24,14 @@ const Card = (props) => {
   // Using card hook for building styles
   const styles = useCard(variant || DEFAULT_VARIANT);
 
+  const wrapperStyle = {
+    ...styles.mainStyle,
+    ...styles.variantStyle
+  }
+
   // Template
   return (
-    <Box {...rest} styleOverride={[styles.mainStyle, styles.variantStyle]}>
+    <Box {...rest} styleOverride={wrapperStyle}>
       {headerContent && (
         <Box styleOverride={styles.headerStyle}>{headerContent}</Box>
       )}
