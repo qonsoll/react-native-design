@@ -65,7 +65,6 @@ Text.propTypes = {
   mr: PropTypes.number,
   mb: PropTypes.number,
   ml: PropTypes.number,
-  children: PropTypes.string,
   styleOverride: PropTypes.object,
   numberOfLines: PropTypes.number,
 }
