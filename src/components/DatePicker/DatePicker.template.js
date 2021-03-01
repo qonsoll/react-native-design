@@ -19,7 +19,6 @@ const DatePicker = ({date, setDate, mode}) => {
 };
 
 DatePicker.propTypes = {
-  date: PropTypes.string,
   setDate: PropTypes.func,
   mode: PropTypes.string,
 }

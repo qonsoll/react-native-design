@@ -163,7 +163,6 @@ Box.propTypes = {
   borderTopRightRadius: PropTypes.string,
   borderBottomLeftRadius: PropTypes.string,
   borderBottomRightRadius: PropTypes.string,
-  styleOverride: PropTypes.object,
   flex: PropTypes.number,
   flexDirection: PropTypes.string,
   justifyContent: PropTypes.string,
