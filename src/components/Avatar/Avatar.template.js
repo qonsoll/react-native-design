@@ -52,7 +52,8 @@ const Avatar = (props) => {
       {fullName ? (
         <Text variant={DEFAULT_TEXT_VARIANT}>
           {fullName
-            .match(/\b(\w)/g)
+            .split(' ')
+            .map((item) => item[0])
             .join('')
             .toUpperCase()}
         </Text>
