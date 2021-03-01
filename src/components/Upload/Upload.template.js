@@ -26,6 +26,7 @@ const Upload = (props) => {
     buttonSize,
     buttonVariant,
     buttonLeftIcon,
+    uri,
     ...rest
   } = props;
 
