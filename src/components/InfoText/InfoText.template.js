@@ -21,7 +21,6 @@ const InfoText = (props) => {
 // PropTypes
 InfoText.propTypes = {
   icon: PropTypes.element,
-  text: PropTypes.string,
   textVariant: PropTypes.string,
   ml: PropTypes.number,
   mb: PropTypes.number,
