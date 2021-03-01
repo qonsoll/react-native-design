@@ -47,7 +47,7 @@ Card.propTypes = {
   footerContent: PropTypes.element,
   content: PropTypes.element,
   borderRadius: PropTypes.string,
-  children: PropTypes.oneOf([PropTypes.element, PropTypes.array]),
+  children: PropTypes.oneOf([PropTypes.element, PropTypes.arrayOf(PropTypes.element)]),
   p: PropTypes.number,
 }
 
