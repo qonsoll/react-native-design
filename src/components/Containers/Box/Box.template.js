@@ -124,10 +124,10 @@ const Box = (props) => {
     maxHeight,
     padding,
     border,
+    styleOverride,
     flexbox,
     boxPosition,
     shadowStyle,
-    styleOverride,
   ]);
 
   // Template
