@@ -67,9 +67,4 @@ const IconWrapper = (props) => {
   );
 };
 
-// PropTypes
-IconWrapper.propTypes = {
-  name: PropTypes.string,
-}
-
 export default IconWrapper;
