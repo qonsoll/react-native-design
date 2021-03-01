@@ -127,7 +127,7 @@ const Box = (props) => {
     flexbox,
     boxPosition,
     shadowStyle,
-    ...styleOverride,
+    styleOverride,
   ]);
 
   // Template
