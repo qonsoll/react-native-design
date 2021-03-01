@@ -49,7 +49,6 @@ const Collapse = (props) => {
 // PropTypes
 Collapse.propTypes = {
   isCollapsed: PropTypes.bool,
-  children: PropTypes.oneOf([PropTypes.element, PropTypes.array]),
   title: PropTypes.string,
   leftIcon: PropTypes.string,
   leftImage: PropTypes.element,
