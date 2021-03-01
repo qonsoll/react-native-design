@@ -32,7 +32,7 @@ const Toggle = ({children, label, variant, onPress, fullWidth, clickable}) => {
 
 // PropTypes
 Toggle.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.oneOf([PropTypes.element, PropTypes.array, PropTypes.string]),
   label: PropTypes.string,
   variant: PropTypes.string,
   onPress: PropTypes.func,
