@@ -10,6 +10,7 @@ import checkboxes from './checkboxes';
 import collapses from './collapses';
 import toggles from './toggles';
 import statuses from './statuses';
+import days from './days';
 
 export {
   buttons,
@@ -24,6 +25,7 @@ export {
   collapses,
   toggles,
   statuses,
+  days,
 };
 
 export default {
@@ -39,4 +41,5 @@ export default {
   collapses,
   toggles,
   statuses,
+  days,
 };

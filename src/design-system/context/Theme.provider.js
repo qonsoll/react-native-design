@@ -14,6 +14,7 @@ import {
   collapses,
   toggles,
   statuses,
+  days,
 } from '../tokens/components';
 import deepmerge from 'deepmerge';
 import PropTypes from 'prop-types';
@@ -36,6 +37,7 @@ const ThemeProvider = (props) => {
       COLLAPSES: collapses(),
       TOGGLES: toggles(),
       STATUSES: statuses(),
+      DAYS: days(),
     },
   };
 

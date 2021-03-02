@@ -10,6 +10,7 @@ import Box from './components/Containers/Box';
 import Row from './components/Containers/Row';
 import Col from './components/Containers/Col';
 import DatePicker from './components/DatePicker';
+import Day from './components/Day';
 import Divider from './components/Divider';
 import Icon from './components/Icon';
 import Image from './components/Image';
@@ -41,6 +42,7 @@ export {
   Row,
   Col,
   DatePicker,
+  Day,
   Divider,
   Icon,
   Image,
@@ -73,6 +75,7 @@ export default {
   Row,
   Col,
   DatePicker,
+  Day,
   Divider,
   Icon,
   Image,
