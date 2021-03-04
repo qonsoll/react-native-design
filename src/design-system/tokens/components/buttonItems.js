@@ -31,6 +31,18 @@ const buttonItems = () => {
         border: 'thin',
         type: 'filled',
       },
+      warning: {
+        variant: 'warning',
+        corners: 'smooth',
+        border: 'thin',
+        type: 'filled',
+      },
+      danger: {
+        variant: 'danger',
+        corners: 'smooth',
+        border: 'thin',
+        type: 'filled',
+      },
     },
   };
 };
