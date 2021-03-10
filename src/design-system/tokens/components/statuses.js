@@ -13,6 +13,10 @@ const statuses = (variant) => {
         wrapperBg: 'danger-lighten-8',
         bg: 'danger-default',
       },
+      warning: {
+        wrapperBg: 'warning-lighten-8',
+        bg: 'warning-default',
+      },
     },
   };
 };
