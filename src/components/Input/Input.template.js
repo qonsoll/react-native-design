@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {TextInput} from 'react-native';
+import {StyleSheet, TextInput} from 'react-native';
 import Item from '../Item';
 
 // Defaults
@@ -8,6 +8,13 @@ const DEFAULT_TYPE = 'borderedBottom';
 const DEFAULT_VARIANT = 'grey';
 const FOCUS_VARIANT = 'primary';
 const ERROR_VARIANT = 'transparentDanger';
+
+// Making inner input area full width
+const inputStyles = StyleSheet.create({
+  main: {
+    flex: 1
+  }
+})
 
 const Input = (props) => {
   // Destructuring props
@@ -56,6 +63,7 @@ const Input = (props) => {
       type={DEFAULT_TYPE}
       corners={DEFAULT_CORNERS}>
       <TextInput
+        style={inputStyles.main}
         multiline={multiline}
         keyboardType={keyboardType}
         onFocus={onFocus}
