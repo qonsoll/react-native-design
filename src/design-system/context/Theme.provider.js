@@ -43,7 +43,7 @@ const ThemeProvider = (props) => {
   };
 
   // Merging default theme and theme provided to the ThemeProvider
-  const customTheme = _.merge(theme, defaultThemeExtended);
+  const customTheme = _.merge(defaultThemeExtended, theme);
 
   // Theme state
   const [state, setState] = useState({
