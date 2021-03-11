@@ -12,6 +12,7 @@ const {
   useFontVariant,
   useMargin,
   useTextAlign,
+  useTextTransform,
 } = hooks;
 const { compose } = helpers;
 
@@ -37,7 +38,8 @@ const Text = (props) => {
   const lineHeight = useLineHeight(props.lineHeight);
   const fontVariant = useFontVariant(props.variant);
   const margin = useMargin({ mx, my, m, mt, mr, mb, ml });
-  const textAlign = useTextAlign(props.textAlign)
+  const textAlign = useTextAlign(props.textAlign);
+  const textTransform = useTextTransform(props.textTransform);
 
   // Merging styles into single object
   const style = compose([
@@ -47,8 +49,9 @@ const Text = (props) => {
     lineHeight,
     fontVariant,
     margin,
-    styleOverride,
     textAlign,
+    textTransform,
+    styleOverride,
   ]);
 
   // Template

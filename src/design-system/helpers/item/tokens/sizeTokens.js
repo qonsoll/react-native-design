@@ -10,8 +10,7 @@ const SIZE_TOKENS = ({theme}) => {
       iconSize: ICON_SIZES.xs,
       height: 20,
       width: 20,
-      margin: 4,
-      textTransform: 'uppercase'
+      margin: 4
     },
     sm: {
       paddingHorizontal: 12,
@@ -22,8 +21,7 @@ const SIZE_TOKENS = ({theme}) => {
       iconSize: ICON_SIZES.sm,
       height: 28,
       width: 28,
-      margin: 12,
-      textTransform: 'uppercase'
+      margin: 12
     },
     md: {
       paddingHorizontal: 16,
@@ -34,8 +32,7 @@ const SIZE_TOKENS = ({theme}) => {
       iconSize: ICON_SIZES.md,
       height: 40,
       width: 40,
-      margin: 16,
-      textTransform: 'uppercase'
+      margin: 16
     },
     lg: {
       paddingHorizontal: 24,
@@ -46,8 +43,7 @@ const SIZE_TOKENS = ({theme}) => {
       iconSize: ICON_SIZES.lg,
       height: 52,
       width: 52,
-      margin: 24,
-      textTransform: 'uppercase'
+      margin: 24
     },
     xl: {
       paddingHorizontal: 28,
@@ -58,8 +54,7 @@ const SIZE_TOKENS = ({theme}) => {
       iconSize: ICON_SIZES.xl,
       height: 64,
       width: 64,
-      margin: 28,
-      textTransform: 'uppercase'
+      margin: 28
     },
   };
 };

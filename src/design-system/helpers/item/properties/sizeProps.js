@@ -9,8 +9,7 @@ const SIZE_PROPS = {
     'iconSize',
     'width',
     'height',
-    'margin',
-    'textTransform'
+    'margin'
   ],
   sm: [
     'paddingHorizontal',
@@ -22,8 +21,7 @@ const SIZE_PROPS = {
     'iconSize',
     'width',
     'height',
-    'margin',
-    'textTransform'
+    'margin'
   ],
   md: [
     'paddingHorizontal',
@@ -35,8 +33,7 @@ const SIZE_PROPS = {
     'iconSize',
     'width',
     'height',
-    'margin',
-    'textTransform'
+    'margin'
   ],
   lg: [
     'paddingHorizontal',
@@ -48,8 +45,7 @@ const SIZE_PROPS = {
     'iconSize',
     'width',
     'height',
-    'margin',
-    'textTransform'
+    'margin'
   ],
   xl: [
     'paddingHorizontal',
@@ -61,8 +57,7 @@ const SIZE_PROPS = {
     'iconSize',
     'width',
     'height',
-    'margin',
-    'textTransform'
+    'margin'
   ],
 };
 

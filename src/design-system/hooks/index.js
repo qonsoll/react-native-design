@@ -27,6 +27,7 @@ import useCard from './useCard';
 import usePosition from './usePosition';
 import useMaxHeight from './useMaxHeight';
 import useTextAlign from './useTextAlign';
+import useTextTransform from './useTextTransform';
 import useMaxWidth from './useMaxWidth';
 
 export {
@@ -59,6 +60,7 @@ export {
   usePosition,
   useMaxHeight,
   useTextAlign,
+  useTextTransform,
   useMaxWidth,
 };
 
@@ -92,5 +94,6 @@ export default {
   usePosition,
   useMaxHeight,
   useTextAlign,
+  useTextTransform,
   useMaxWidth,
 };
