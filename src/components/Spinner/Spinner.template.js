@@ -1,7 +1,6 @@
 import React from 'react';
 import {hooks} from '../../design-system';
 import {ActivityIndicator} from 'react-native';
-import PropTypes from 'prop-types';
 
 // Using styling hook
 const {useColorOnly} = hooks;
@@ -25,12 +24,5 @@ const Spinner = (props) => {
     />
   );
 };
-
-// PropTypes
-Spinner.propTypes = {
-  size: PropTypes.string,
-  color: PropTypes.string,
-  colorCode: PropTypes.string,
-}
 
 export default Spinner;
