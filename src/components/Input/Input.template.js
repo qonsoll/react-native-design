@@ -19,6 +19,7 @@ const inputStyles = StyleSheet.create({
 const Input = (props) => {
   // Destructuring props
   const {
+    size,
     name,
     initialValue,
     onChange,
@@ -55,6 +56,7 @@ const Input = (props) => {
   // Template
   return (
     <Item
+      size={size}
       leftIconName={icon}
       rightIconName={defaultVariant === 'transparentDanger' && 'times'}
       primaryInfoText={label}
