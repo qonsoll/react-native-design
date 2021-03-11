@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 // Defaults
 const DEFAULT_VARIANT = 'default'
 
-const Toggle = ({children, label, variant, onPress, fullWidth, clickable}) => {
+const Toggle = ({children, label, variant, onPress, fullWidth, clickable, ...rest}) => {
   // Using theme context
   const {theme} = useTheme();
   const {TOGGLES} = theme.components;
@@ -24,6 +24,7 @@ const Toggle = ({children, label, variant, onPress, fullWidth, clickable}) => {
         middleAuto
         {...TOGGLES.variants[variant || DEFAULT_VARIANT]}
         {...extraProps}
+        {...rest}
         text={label}
       />
     </Box>
@@ -32,7 +33,6 @@ const Toggle = ({children, label, variant, onPress, fullWidth, clickable}) => {
 
 // PropTypes
 Toggle.propTypes = {
-  children: PropTypes.oneOf([PropTypes.element, PropTypes.array, PropTypes.string]),
   label: PropTypes.string,
   variant: PropTypes.string,
   onPress: PropTypes.func,
