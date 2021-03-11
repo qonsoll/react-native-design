@@ -77,9 +77,7 @@ const Item = (props) => {
         )}
         {component ||
           (children &&
-            React.cloneElement(component || children, {
-              styleOverride: textStyle.main,
-            }))}
+            React.cloneElement(component || children))}
       </Col>
       {isRectangleShape && (rightIconName || rightImage) && (
         <Col v="center" auto ml={iconStyle.margin}>
