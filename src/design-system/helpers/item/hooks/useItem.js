@@ -41,6 +41,7 @@ const useItem = ({variant, size, shape, corners, type, border, shadow}) => {
       fontSize: shapeStyles.size.fontSize,
       lineHeight: shapeStyles.size.lineHeight,
       color: typeStyles.variant.color,
+      textTransform: shapeStyles.size.textTransform,
     },
   });
   const infoTextStyle = StyleSheet.create({

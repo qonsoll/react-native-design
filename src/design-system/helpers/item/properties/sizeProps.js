@@ -10,6 +10,7 @@ const SIZE_PROPS = {
     'width',
     'height',
     'margin',
+    'textTransform'
   ],
   sm: [
     'paddingHorizontal',
@@ -22,6 +23,7 @@ const SIZE_PROPS = {
     'width',
     'height',
     'margin',
+    'textTransform'
   ],
   md: [
     'paddingHorizontal',
@@ -34,6 +36,7 @@ const SIZE_PROPS = {
     'width',
     'height',
     'margin',
+    'textTransform'
   ],
   lg: [
     'paddingHorizontal',
@@ -46,6 +49,7 @@ const SIZE_PROPS = {
     'width',
     'height',
     'margin',
+    'textTransform'
   ],
   xl: [
     'paddingHorizontal',
@@ -58,6 +62,7 @@ const SIZE_PROPS = {
     'width',
     'height',
     'margin',
+    'textTransform'
   ],
 };
 

@@ -11,6 +11,7 @@ const SIZE_TOKENS = ({theme}) => {
       height: 20,
       width: 20,
       margin: 4,
+      textTransform: 'uppercase'
     },
     sm: {
       paddingHorizontal: 12,
@@ -22,6 +23,7 @@ const SIZE_TOKENS = ({theme}) => {
       height: 28,
       width: 28,
       margin: 12,
+      textTransform: 'uppercase'
     },
     md: {
       paddingHorizontal: 16,
@@ -33,6 +35,7 @@ const SIZE_TOKENS = ({theme}) => {
       height: 40,
       width: 40,
       margin: 16,
+      textTransform: 'uppercase'
     },
     lg: {
       paddingHorizontal: 24,
@@ -44,6 +47,7 @@ const SIZE_TOKENS = ({theme}) => {
       height: 52,
       width: 52,
       margin: 24,
+      textTransform: 'uppercase'
     },
     xl: {
       paddingHorizontal: 28,
@@ -55,6 +59,7 @@ const SIZE_TOKENS = ({theme}) => {
       height: 64,
       width: 64,
       margin: 28,
+      textTransform: 'uppercase'
     },
   };
 };
