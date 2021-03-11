@@ -22,6 +22,7 @@ import useIconSize from './useIconSize';
 import useBoxIconSize from './useBoxIconSize';
 import useBoxIconColor from './useBoxIconColor';
 import useFlexbox from './useFlexbox';
+import useFontFamily from './useFontFamily';
 import useColorOnly from './useColorOnly';
 import useCard from './useCard';
 import usePosition from './usePosition';
@@ -55,6 +56,7 @@ export {
   useBoxIconSize,
   useBoxIconColor,
   useFlexbox,
+  useFontFamily,
   useColorOnly,
   useCard,
   usePosition,
@@ -89,6 +91,7 @@ export default {
   useBoxIconSize,
   useBoxIconColor,
   useFlexbox,
+  useFontFamily,
   useColorOnly,
   useCard,
   usePosition,

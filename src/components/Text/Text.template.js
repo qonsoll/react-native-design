@@ -13,6 +13,7 @@ const {
   useMargin,
   useTextAlign,
   useTextTransform,
+  useFontFamily,
 } = hooks;
 const { compose } = helpers;
 
@@ -40,6 +41,7 @@ const Text = (props) => {
   const margin = useMargin({ mx, my, m, mt, mr, mb, ml });
   const textAlign = useTextAlign(props.textAlign);
   const textTransform = useTextTransform(props.textTransform);
+  const fontFamily = useFontFamily(props.fontFamily)
 
   // Merging styles into single object
   const style = compose([
@@ -51,6 +53,7 @@ const Text = (props) => {
     margin,
     textAlign,
     textTransform,
+    fontFamily,
     styleOverride,
   ]);
 
