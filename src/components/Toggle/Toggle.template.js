@@ -26,7 +26,9 @@ const Toggle = ({children, label, variant, onPress, fullWidth, clickable, ...res
         {...extraProps}
         {...rest}
         text={label}
-      />
+      >
+        {children}
+      </Item>
     </Box>
   );
 };
