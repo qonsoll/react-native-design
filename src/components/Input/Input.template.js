@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {StyleSheet, TextInput} from 'react-native';
 import Item from '../Item';
+import {useTheme} from '../../design-system/context'
 
 // Defaults
 const DEFAULT_CORNERS = 'sharp';
@@ -9,14 +10,8 @@ const DEFAULT_VARIANT = 'grey';
 const FOCUS_VARIANT = 'primary';
 const ERROR_VARIANT = 'transparentDanger';
 
-// Making inner input area full width
-const inputStyles = StyleSheet.create({
-  main: {
-    flex: 1
-  }
-})
-
 const Input = (props) => {
+  const {theme} = useTheme()
   // Destructuring props
   const {
     size,
@@ -34,6 +29,14 @@ const Input = (props) => {
     multiline,
     secureTextEntry = false,
   } = props;
+
+  // Making inner input area full width
+  const inputStyles = StyleSheet.create({
+    main: {
+      flex: 1,
+      fontFamily: theme.CORE.FONT_FAMILIES.body
+    }
+  })
 
   // Component state
   const [value, setValue] = useState(initialValue);
