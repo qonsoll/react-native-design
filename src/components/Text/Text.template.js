@@ -1,6 +1,6 @@
 import React from 'react';
-import {hooks, helpers} from '../../design-system';
-import {Text as RNText} from 'react-native';
+import { hooks, helpers } from '../../design-system';
+import { Text as RNText } from 'react-native';
 import PropTypes from 'prop-types';
 
 // Using styling hooks and helpers
@@ -11,8 +11,9 @@ const {
   useLineHeight,
   useFontVariant,
   useMargin,
+  useTextAlign,
 } = hooks;
-const {compose} = helpers;
+const { compose } = helpers;
 
 const Text = (props) => {
   // Destructuring props
@@ -35,7 +36,8 @@ const Text = (props) => {
   const fontWeight = useFontWeight(props.fontWeight);
   const lineHeight = useLineHeight(props.lineHeight);
   const fontVariant = useFontVariant(props.variant);
-  const margin = useMargin({mx, my, m, mt, mr, mb, ml});
+  const margin = useMargin({ mx, my, m, mt, mr, mb, ml });
+  const textAlign = useTextAlign(props.textAlign)
 
   // Merging styles into single object
   const style = compose([
@@ -46,6 +48,7 @@ const Text = (props) => {
     fontVariant,
     margin,
     styleOverride,
+    textAlign,
   ]);
 
   // Template
