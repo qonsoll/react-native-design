@@ -9,7 +9,7 @@ const useBorders = (value) => {
 
   // Building tokens using current theme
   // const TOKENS = BORDER_TOKENS({theme})[value];
-  const TOKENS = theme.EXTENSIONS.ITEM_TOKENS.BORDER_TOKENS[value]
+  const TOKENS = theme.EXTENSIONS.ITEM_TOKENS.BORDER_TOKENS[value] || BORDER_TOKENS({theme})[value]
 
   // Get prop styles by value
   const PROPS = BORDER_PROPS[value];

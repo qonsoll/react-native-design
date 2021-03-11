@@ -9,7 +9,7 @@ const useCorners = (value) => {
 
   // Building tokens using current theme
   // const TOKENS = CORNER_TOKENS({theme})[value];
-  const TOKENS = theme.EXTENSIONS.ITEM_TOKENS.CORNER_TOKENS[value]
+  const TOKENS = theme.EXTENSIONS.ITEM_TOKENS.CORNER_TOKENS[value] || CORNER_TOKENS({theme})[value]
 
   // Get prop styles by value
   const PROPS = CORNER_PROPS[value];
