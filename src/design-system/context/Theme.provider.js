@@ -16,7 +16,8 @@ import {
   statuses,
   days,
 } from '../tokens/components';
-import deepmerge from 'deepmerge';
+// import deepmerge from 'deepmerge';
+import _ from 'lodash'
 import PropTypes from 'prop-types';
 
 const ThemeProvider = (props) => {
@@ -42,7 +43,7 @@ const ThemeProvider = (props) => {
   };
 
   // Merging default theme and theme provided to the ThemeProvider
-  const customTheme = deepmerge(defaultThemeExtended, theme);
+  const customTheme = _.merge(defaultThemeExtended, theme);
 
   // Theme state
   const [state, setState] = useState({
