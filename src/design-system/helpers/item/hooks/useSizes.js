@@ -9,7 +9,7 @@ const useSizes = (value) => {
 
   // Building tokens using current theme
   // const TOKENS = SIZE_TOKENS({theme})[value];
-  const TOKENS = theme.EXTENSIONS.ITEM_TOKENS.SIZE_TOKENS[value] || SIZE_TOKENS({theme})[value]
+  const TOKENS = theme?.EXTENSIONS?.ITEM_TOKENS?.SIZE_TOKENS[value] || SIZE_TOKENS({theme})[value]
 
   // Get prop styles by value
   const PROPS = SIZE_PROPS[value];

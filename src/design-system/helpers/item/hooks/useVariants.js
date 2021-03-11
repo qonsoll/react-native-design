@@ -9,10 +9,7 @@ const useVariants = (value) => {
 
   // Building tokens using current theme
   // const TOKENS = VARIANT_TOKENS({theme})[value];
-  const TOKENS = theme.EXTENSIONS.ITEM_TOKENS.VARIANT_TOKENS[value] || VARIANT_TOKENS({theme})[value]
-
-  console.log('-> TOKENS ->', TOKENS)
-  console.log('-> theme ->', theme)
+  const TOKENS = theme?.EXTENSIONS?.ITEM_TOKENS?.VARIANT_TOKENS[value] || VARIANT_TOKENS({theme})[value]
 
   // Get prop styles by value
   const PROPS = VARIANT_PROPS[value];
