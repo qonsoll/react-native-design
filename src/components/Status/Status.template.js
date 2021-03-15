@@ -18,7 +18,6 @@ const Status = (props) => {
   // Template
   return (
     <Box
-      shadow={DEFAULT_SHADOW}
       width={16}
       height={16}
       p={4}
@@ -29,6 +28,7 @@ const Status = (props) => {
         height={8}
         bg={STATUSES.variants[variant || DEFAULT_VARIANT].bg}
         borderRadius={'sm'}
+        shadow={DEFAULT_SHADOW}
       />
     </Box>
   );
