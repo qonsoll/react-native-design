@@ -15,9 +15,9 @@ const CORNERS = {
 };
 const DEFAULT_SIZE = 'md';
 const DEFAULT_CORNERS = 'round';
-const DEFAULT_BG = 'grey-3';
+const DEFAULT_BG = 'grey-8';
 const DEFAULT_TEXT_VARIANT = 'h4';
-const DEFAULT_ICON_FILL = 'black';
+const DEFAULT_ICON_FILL = 'grey-4';
 const DEFAULT_ICON_SIZE = 30;
 
 const Avatar = (props) => {
