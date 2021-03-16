@@ -4,7 +4,8 @@ const fontVariants = ({theme}) => {
     LINE_HEIGHTS,
     FONT_FAMILIES,
     FONT_WEIGHTS,
-    LETTER_SPACINGS, COLORS
+    LETTER_SPACINGS,
+    COLORS
   } = theme.CORE;
   const defaultFontVariants = {
     h1: {
