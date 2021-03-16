@@ -45,7 +45,6 @@ const Text = (props) => {
 
   // Merging styles into single object
   const style = compose([
-    fontVariant,
     fontFamily,
     fontSize,
     lineHeight,
@@ -54,6 +53,7 @@ const Text = (props) => {
     textTransform,
     textAlign,
     margin,
+    fontVariant,
     styleOverride,
   ]);
 

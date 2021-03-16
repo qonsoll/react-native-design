@@ -5,7 +5,7 @@ const useFontSize = (value) => {
   const {theme} = useTheme();
   const style = StyleSheet.create({
     main: {
-      fontSize: theme.CORE.FONT_SIZES[value],
+      fontSize: theme.CORE.FONT_SIZES[value] || theme.CORE.FONT_SIZES['body2'],
     },
   });
   return style.main;

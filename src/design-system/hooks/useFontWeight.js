@@ -5,7 +5,7 @@ const useFontWeight = (value) => {
   const {theme} = useTheme();
   const style = StyleSheet.create({
     main: {
-      fontWeight: theme.CORE.FONT_WEIGHTS[value],
+      fontWeight: theme.CORE.FONT_WEIGHTS[value] || theme.CORE.FONT_WEIGHTS['regular'],
     },
   });
   return style.main;
