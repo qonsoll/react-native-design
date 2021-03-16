@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {StyleSheet, TextInput} from 'react-native';
 import Item from '../Item';
 import {useTheme} from '../../design-system/context'
+import { rest } from 'lodash';
 
 // Defaults
 const DEFAULT_CORNERS = 'sharp';
@@ -28,6 +29,7 @@ const Input = (props) => {
     variant,
     multiline,
     secureTextEntry = false,
+    ...rest
   } = props;
 
   // Making inner input area full width
@@ -78,6 +80,7 @@ const Input = (props) => {
         placeholder={placeholder}
         defaultValue={defaultValue}
         secureTextEntry={secureTextEntry}
+        {...rest}
       />
     </Item>
   );
