@@ -4,7 +4,7 @@ import Box from '../Containers/Box';
 import {useTheme} from '../../design-system/context';
 
 // Defaults
-const DEFAULT_BG = 'grey-2';
+const DEFAULT_BG = 'grey-8';
 
 const Divider = (props) => {
   // Destructuring props
