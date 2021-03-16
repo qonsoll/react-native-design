@@ -49,11 +49,11 @@ const Text = (props) => {
     fontSize,
     lineHeight,
     fontWeight,
+    fontVariant,
     color,
     textTransform,
     textAlign,
     margin,
-    fontVariant,
     styleOverride,
   ]);
 
