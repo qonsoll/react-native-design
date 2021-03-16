@@ -67,7 +67,7 @@ const Item = (props) => {
         </Col>
       )}
       <Col auto={!isRectangleShape || middleAuto}>
-        {text && <Text styleOverride={textStyle.main}>{text}</Text>}
+        {text && <Text variant={variant || textStyle.body2} styleOverride={textStyle.main}>{text}</Text>}
         {iconName && (
           <Icon
             name={iconName}
