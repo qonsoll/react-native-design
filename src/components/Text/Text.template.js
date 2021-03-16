@@ -45,15 +45,15 @@ const Text = (props) => {
 
   // Merging styles into single object
   const style = compose([
-    fontSize,
-    fontWeight,
-    lineHeight,
-    margin,
-    textAlign,
-    textTransform,
-    fontFamily,
     fontVariant,
+    fontFamily,
+    fontSize,
+    lineHeight,
+    fontWeight,
     color,
+    textTransform,
+    textAlign,
+    margin,
     styleOverride,
   ]);
 
