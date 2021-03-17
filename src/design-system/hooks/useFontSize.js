@@ -3,12 +3,17 @@ import {StyleSheet} from 'react-native';
 
 const useFontSize = (value) => {
   const {theme} = useTheme();
-  const style = StyleSheet.create({
-    main: {
-      fontSize: theme.CORE.FONT_SIZES[value] || theme.CORE.FONT_SIZES['body2'],
-    },
-  });
-  return style.main;
-};
+  const themeValue = theme.CORE.FONT_SIZES[value];
 
-export default useFontSize;
+  if (themeValue) {
+    const style = StyleSheet.create({
+      main: {
+        fontSize: theme.CORE.FONT_SIZES[value]
+      }
+    })
+
+    return style.main
+  }
+}
+
+export default useFontSize

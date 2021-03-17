@@ -58,7 +58,7 @@ const Avatar = (props) => {
             .toUpperCase()}
         </Text>
       ) : (
-        <User height={DEFAULT_ICON_SIZE} width={DEFAULT_ICON_SIZE} fill={DEFAULT_ICON_FILL} />
+        <User height={DEFAULT_ICON_SIZE} width={DEFAULT_ICON_SIZE} fill={theme.CORE.COLORS[DEFAULT_ICON_FILL]} />
       )}
     </Box>
   );
