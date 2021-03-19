@@ -43,6 +43,12 @@ const buttonItems = () => {
         border: 'thin',
         type: 'filled',
       },
+      white: {
+        variant: 'white',
+        corners: 'smooth',
+        border: 'thin',
+        type: 'filled',
+      }
     },
   };
 };
