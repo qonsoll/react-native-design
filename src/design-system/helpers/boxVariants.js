@@ -63,26 +63,26 @@ const boxVariants = ({theme}) => {
     },
     'grey-light': {
       default: {
-        backgroundColor: COLORS['grey-1'],
-        color: COLORS['grey-18'],
-        borderColor: COLORS['grey-1'],
+        color: COLORS['grey-8'],
+        backgroundColor: COLORS['grey-10'],
+        borderColor: COLORS['grey-10'],
       },
       outlined: {
         backgroundColor: 'transparent',
-        color: COLORS['grey-18'],
-        borderColor: COLORS['grey-18'],
+        color: COLORS['grey-8'],
+        borderColor: COLORS['grey-8'],
       },
     },
     'grey-dark': {
       default: {
         color: '#ffffff',
-        backgroundColor: COLORS['grey-18'],
-        borderColor: COLORS['grey-18'],
+        backgroundColor: COLORS['grey-1'],
+        borderColor: COLORS['grey-1'],
       },
       outlined: {
+        color: COLORS['grey-1'],
         backgroundColor: 'transparent',
-        color: COLORS['grey-18'],
-        borderColor: COLORS['grey-18'],
+        borderColor: COLORS['grey-1'],
       },
     },
     transparent: {
