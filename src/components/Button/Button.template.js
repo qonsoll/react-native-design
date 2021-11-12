@@ -4,11 +4,10 @@ import Spinner from '../Spinner';
 import {Text, TouchableOpacity} from 'react-native';
 import {hooks} from '../../design-system';
 const {useElementBox} = hooks;
-
 const Button = (props) => {
-  const {children, onPress, loading, disable} = props;
+  const {children, onPress, loading, disabled} = props;
   const {boxStyle, boxFontStyle, boxIconStyle} = useElementBox({
-    variant: props.variant,
+    variant: disabled ? 'grey-light' : props.variant,
     type: props.type,
     shape: props.shape,
     size: props.size,
@@ -26,10 +25,10 @@ const Button = (props) => {
     icon: props.icon,
   });
 
-  const isDisabled = disable||loading
+  const isDisabled = disabled||loading
 
   return (
-    <TouchableOpacity style={boxStyle} onPress={!isDisabled&&onPress} disable={isDisabled}>
+    <TouchableOpacity style={boxStyle} onPress={!isDisabled&&onPress} disabled={isDisabled}>
       {loading ? (
         <Spinner colorCode={boxIconStyle.color} />
       ) : (
@@ -58,10 +57,10 @@ const Button = (props) => {
   );
 };
 
-Button.PropTypes = {
+Button.propTypes = {
   onPress: PropTypes.func,
   loading: PropTypes.bool,
-  disable:PropTypes.bool,
+  disabled:PropTypes.bool,
   variant: PropTypes.string,
   type:PropTypes.string,
   size:PropTypes.func,

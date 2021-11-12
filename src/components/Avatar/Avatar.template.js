@@ -22,7 +22,7 @@ const DEFAULT_ICON_SIZE = 30;
 
 const Avatar = (props) => {
   // Destructuring props
-  const {src, uri, size, corners, fullName} = props;
+  const {src, uri, size, corners, fullName, textVariant} = props;
 
   // Using theme context
   const {theme} = useTheme();
@@ -50,7 +50,7 @@ const Avatar = (props) => {
       justifyContent="center"
       alignItems="center">
       {fullName ? (
-        <Text variant={DEFAULT_TEXT_VARIANT}>
+        <Text variant={textVariant || DEFAULT_TEXT_VARIANT}>
           {fullName
             .split(' ')
             .map((item) => item[0])
@@ -70,6 +70,7 @@ Avatar.propTypes = {
   size: PropTypes.string,
   corners: PropTypes.string,
   fullName: PropTypes.string,
+  textVariant: PropTypes.oneOf(['h1','h2','h3','h4','h5','h6','body1','body2','caption1','caption2']),
 }
 
 export default Avatar;
